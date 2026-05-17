@@ -75,4 +75,5 @@ async def on_message(message):
 
 
 # Uruchomienie bota
-bot.run("TOKEN_BOTA")
+TOKEN_BOTA = os.getenv("DISCORD_TOKEN")
+bot.run(TOKEN_BOTA)
