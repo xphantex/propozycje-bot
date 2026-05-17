@@ -77,4 +77,19 @@ async def on_message(message):
 
 # Uruchomienie bota
 TOKEN_BOTA = os.getenv("DISCORD_TOKEN")
+
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is alive!"
+
+def run():
+    app.run(host='0.0.0.0', port=10000)
+
+Thread(target=run).start()
+
 bot.run(TOKEN_BOTA)
