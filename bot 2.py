@@ -75,4 +75,4 @@ async def on_message(message):
 
 
 # Uruchomienie bota
-bot.run("TOKEN_BOTA = "TWÓJ_TAJNY_TOKEN_TUTAJ")
+bot.run("TOKEN_BOTA")
